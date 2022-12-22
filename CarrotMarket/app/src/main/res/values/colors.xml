@@ -12,5 +12,6 @@
     <color name="blackForText">#4a4a4a</color>
     <color name="redForText">#d9534f</color>
     <color name="carrot">#EF904F</color>
+    <color name="blue">#0000FF</color>
 
 </resources>
