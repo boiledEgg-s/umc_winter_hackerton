@@ -1,4 +1,20 @@
 package com.softsquared.template.kotlin.src.main.home
 
-class DetailActivity {
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.softsquared.template.kotlin.databinding.ActivityDetailBinding
+
+class DetailActivity : AppCompatActivity(){
+    private lateinit var binding: ActivityDetailBinding
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityDetailBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        supportActionBar?.hide()
+
+        binding.arrowButton.setOnClickListener {
+            finish()
+        }
+    }
 }

@@ -13,5 +13,7 @@
     <color name="redForText">#d9534f</color>
     <color name="carrot">#EF904F</color>
     <color name="blue">#0000FF</color>
+    <color name="face">#1561A9</color>
+    <color name="gray">#D9D9D9</color>
 
 </resources>

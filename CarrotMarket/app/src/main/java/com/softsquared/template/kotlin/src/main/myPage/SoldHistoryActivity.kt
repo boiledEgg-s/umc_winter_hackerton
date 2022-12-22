@@ -1,6 +1,7 @@
 package com.softsquared.template.kotlin.src.main.myPage
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
@@ -32,7 +33,7 @@ class SoldHistoryActivity : AppCompatActivity() {
 
         //뒤로 돌아가는 버튼 기능 추가
         binding.arrowButton.setOnClickListener {
-
+            finish()
         }
     }
 }

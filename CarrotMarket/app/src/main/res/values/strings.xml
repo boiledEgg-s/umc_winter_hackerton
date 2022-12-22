@@ -16,6 +16,13 @@
     <string name="home_et_id">아이디를 입력하세요.</string>
     <string name="home_et_pw">비밀번호를 입력하세요.</string>
     <string name="won">원</string>
+    <string name="degree">℃</string>
+    <string name="manner">매너온도</string>
+    <string name="title">판매합니다</string>
+    <string name="category2">생활/가공식품ㆍ끌올 3분 전</string>
+    <string name="content">열라면 5개 싸게 가져가세요.\n건국대 황소 앞에서 직거래 가능</string>
+    <string name="price">3,000원</string>
+    <string name="chat">채팅으로 거래하기</string>
 
     <!--  toolbar  -->
     <string name="search">검색</string>
