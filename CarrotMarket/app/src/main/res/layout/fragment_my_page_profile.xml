@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".src.main.myPage.MyPageFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/sv_cv1_iv"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/ic_user_profile_placeholder"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/sv_cv2_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="user_name"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/sv_cv3_tv"
+                    app:layout_constraintStart_toEndOf="@id/sv_cv1_iv"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/sv_cv3_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="동네 이름"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/sv_cv1_iv"
+                    app:layout_constraintTop_toBottomOf="@id/sv_cv2_tv" />
+
+                <Button
+                    android:id="@+id/sv_cv4_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/white"
+                    android:text="프로필 수정"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/sv_cv1_iv" />
+                <TextView
+                    android:id="@+id/sv_cv5_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="매너온도"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/sv_cv4_btn"/>
+
+                <TextView
+                    android:id="@+id/sv_cv6_tv"
+                    android:layout_width="61dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="15dp"
+                    android:text="온도표시"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@id/sv_cv7_iv"
+                    app:layout_constraintTop_toBottomOf="@id/sv_cv4_btn" />
+                <ImageView
+                    android:id="@+id/sv_cv7_iv"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="15dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_manner_03"
+                    app:layout_constraintTop_toBottomOf="@id/sv_cv4_btn"
+                    app:layout_constraintBottom_toTopOf="@id/progressBar2"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+                <ProgressBar
+                    android:id="@+id/progressBar2"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginTop="16dp"
+                    android:progress="50"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sv_cv5_tv" />
+
+                <ImageView
+                    android:id="@+id/iv_temp1"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_feed_interest_outline_18"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
+
+                <TextView
+                    android:id="@+id/tv_temp1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="재거래희망률"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_temp1"
+                    app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
+
+                <TextView
+                    android:id="@+id/tv_temp1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" -%"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_temp1_1"
+                    app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
+
+                <TextView
+                    android:id="@+id/tv_temp1_3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="55dp"
+                    android:text="표시될 만큼 충분히 거래하지 않았어요"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_temp1_1" />" />
+
+                <ImageView
+                    android:id="@+id/iv_temp2"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_feed_reply_outline_18"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tv_temp2_1"
+                    app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
+
+                <TextView
+                    android:id="@+id/tv_temp2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="응답률"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tv_temp2_2"
+                    app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
+
+                <TextView
+                    android:id="@+id/tv_temp2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="110dp"
+                    android:text=" -%"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
+                <TextView
+                    android:id="@+id/tv_temp2_3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:text="표시될 만큼 충분히 채팅하지 않았어요"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_temp2_1" />" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:layout_margin="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인증 횟수\n가입년도 (최근 활동 기록)"
+                android:textStyle="bold"
+                android:textSize="13sp"/>
+            <android.widget.Button
+                android:id="@+id/btn_profile_badges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="13dp"
+                android:paddingVertical="20dp"
+                android:text="활동 뱃지 (개수)개"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textAlignment="textStart"
+                android:background="@color/white"
+                android:drawableRight="@drawable/ic_chevron_right_outline_18"/>
+            <android.widget.Button
+                android:id="@+id/btn_selling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="13dp"
+                android:paddingVertical="20dp"
+                android:text="판매상품 (개수)개"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textAlignment="textStart"
+                android:background="@color/white"
+                android:drawableRight="@drawable/ic_chevron_right_outline_18"/>
+            <android.widget.Button
+                android:id="@+id/btn_living"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="13dp"
+                android:paddingVertical="20dp"
+                android:text="동네생활"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textAlignment="textStart"
+                android:background="@color/white"
+                android:drawableRight="@drawable/ic_chevron_right_outline_18"/>
+            <android.widget.Button
+                android:id="@+id/btn_manner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="13dp"
+                android:paddingVertical="20dp"
+                android:text="받은 매너 평가"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textAlignment="textStart"
+                android:background="@color/white"
+                android:drawableRight="@drawable/ic_chevron_right_outline_18"/>
+            <android.widget.Button
+                android:id="@+id/btn_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="13dp"
+                android:paddingVertical="20dp"
+                android:text="받은 거래 후기 (개수)"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textAlignment="textStart"
+                android:background="@color/white"
+                android:drawableRight="@drawable/ic_chevron_right_outline_18"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
