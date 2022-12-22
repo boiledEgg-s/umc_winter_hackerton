@@ -9,6 +9,43 @@
     android:orientation="vertical"
     tools:context=".src.main.myPage.MyPageFragment">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--app:menu="@menu/menu_home_toolbar"-->
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_gravity="start"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/home_as_up"
+            android:background="@color/white"/>
+        <TextView
+            android:id="@+id/my_town"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="프로필"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_setting"
+            android:background="@color/white"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
