@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:color="@color/colorAccent" android:state_checked="true" />
     <item android:color="@color/blackForText" />
+    <item android:drawable="@drawable/ic_home_inactivate" android:state_checked="false"/>
+    <item android:drawable="@drawable/ic_profile_inactivate" android:state_checked="false"/>
+    <item android:drawable="@drawable/ic_home_activate" android:state_checked="true"/>
+    <item android:drawable="@drawable/ic_profile_activate" android:state_checked="true"/>
 </selector>
