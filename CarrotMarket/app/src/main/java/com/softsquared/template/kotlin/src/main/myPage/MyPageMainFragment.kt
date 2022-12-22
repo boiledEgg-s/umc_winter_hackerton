@@ -7,10 +7,11 @@ import com.softsquared.template.kotlin.config.BaseFragment
 import com.softsquared.template.kotlin.databinding.FragmentMyPageBinding
 import com.softsquared.template.kotlin.src.main.home.HomeFragment
 
-class MyPageFragment :
+class MyPageMainFragment :
     BaseFragment<FragmentMyPageBinding>(FragmentMyPageBinding::bind, R.layout.fragment_my_page) {
     private var mCount = 0
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
     }
 }
