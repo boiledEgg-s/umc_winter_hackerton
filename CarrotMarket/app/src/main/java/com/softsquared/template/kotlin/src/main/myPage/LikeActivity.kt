@@ -41,7 +41,7 @@ class LikeActivity : AppCompatActivity() {
 
         //돌아가는 기능 추가
         binding.arrowButton.setOnClickListener {
-
+            finish();
         }
     }
 }

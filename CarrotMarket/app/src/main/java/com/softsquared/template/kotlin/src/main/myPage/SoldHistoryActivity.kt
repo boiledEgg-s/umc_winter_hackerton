@@ -32,7 +32,7 @@ class SoldHistoryActivity : AppCompatActivity() {
 
         //뒤로 돌아가는 버튼 기능 추가
         binding.arrowButton.setOnClickListener {
-
+            finish()
         }
     }
 }
