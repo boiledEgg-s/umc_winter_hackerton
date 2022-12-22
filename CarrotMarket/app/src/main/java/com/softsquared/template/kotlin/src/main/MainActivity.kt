@@ -8,6 +8,7 @@ import com.softsquared.template.kotlin.config.BaseActivity
 import com.softsquared.template.kotlin.databinding.ActivityMainBinding
 import com.softsquared.template.kotlin.src.main.home.HomeFragment
 import com.softsquared.template.kotlin.src.main.myPage.MyPageFragment
+import com.softsquared.template.kotlin.src.main.town.TownFragment
 
 class  MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::inflate) {
 
@@ -25,6 +26,11 @@ class  MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::inf
                     R.id.menu_main_btm_nav_home -> {
                         supportFragmentManager.beginTransaction()
                             .replace(R.id.main_frm, HomeFragment())
+                            .commitAllowingStateLoss()
+                    }
+                    R.id.menu_main_btm_nav_town -> {
+                        supportFragmentManager.beginTransaction()
+                            .replace(R.id.main_frm, TownFragment())
                             .commitAllowingStateLoss()
                     }
                     R.id.menu_main_btm_nav_my_page -> {

@@ -18,10 +18,16 @@ class MyPageFragment :
             startActivity(intent)
         }
         binding.svCv5Img.setOnClickListener {
-
+            val intent = Intent(this.activity, SoldHistoryActivity::class.java)
+            startActivity(intent)
         }
         binding.svCv6Img.setOnClickListener {
             val intent = Intent(this.activity, MyPagePurchaseActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.svCv7Img.setOnClickListener {
+            val intent = Intent(this.activity, LikeActivity::class.java)
             startActivity(intent)
         }
     }
