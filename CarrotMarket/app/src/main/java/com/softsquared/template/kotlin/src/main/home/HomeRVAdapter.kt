@@ -1,6 +1,7 @@
 package com.softsquared.template.kotlin.src.main.home
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.softsquared.template.kotlin.databinding.HomeRvLayoutBinding
@@ -28,7 +29,21 @@ class HomeRVAdapter(private val itemList: ArrayList<item>) :
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(itemList[position])
+        holder.itemView.setOnClickListener {
+            itemClickListener.onClick(it, position)
+        }
     }
 
     override fun getItemCount(): Int = itemList.size
+
+    //클릭 리스너 구현
+    interface OnItemClickListener {
+        fun onClick(v : View, position: Int)
+    }
+
+    fun setItemClickListener(onItemClickListener: OnItemClickListener) {
+        this.itemClickListener = onItemClickListener
+    }
+
+    private lateinit var itemClickListener: OnItemClickListener
 }
