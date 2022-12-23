@@ -49,8 +49,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".src.main.myPage.SoldHistoryActivity" />
-        <activity android:name=".src.main.myPage.LikeActivity" />
+        <activity android:name=".src.main.myPage.SoldHistoryActivity"/>
+        <activity android:name=".src.main.myPage.LikeActivity"/>
+        <activity android:name=".src.main.home.DetailActivity"/>
+        <activity android:name=".src.main.home.CategoryActivity"/>
         <activity
             android:name=".src.main.MainActivity"
             android:exported="false"

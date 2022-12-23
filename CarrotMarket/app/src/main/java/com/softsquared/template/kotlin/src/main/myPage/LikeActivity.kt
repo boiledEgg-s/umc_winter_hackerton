@@ -1,5 +1,6 @@
 package com.softsquared.template.kotlin.src.main.myPage
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
@@ -41,7 +42,7 @@ class LikeActivity : AppCompatActivity() {
 
         //돌아가는 기능 추가
         binding.arrowButton.setOnClickListener {
-            finish();
+            finish()
         }
     }
 }

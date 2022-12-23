@@ -3,9 +3,7 @@ package com.softsquared.template.kotlin.src.main.home
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.LinearLayout
 import androidx.core.view.size
 import androidx.fragment.app.Fragment
@@ -37,7 +35,8 @@ class HomeFragment : Fragment() {
         adapter.setItemClickListener(object : HomeRVAdapter.OnItemClickListener{
             override fun onClick(v: View, position: Int) {
                 //데이터를 가지고 상세 페이지로 넘어가기.
-
+                val intent = Intent(context, DetailActivity::class.java)
+                startActivity(intent)
             }
         })
 
@@ -58,12 +57,6 @@ class HomeFragment : Fragment() {
             itemList.add(item(R.drawable.default_error, "테스트입니다", "자양동", "5분 전", 10000, 0, 0))
         }
 
-        //글쓰기 화면으로 넘어가기
-        //작동 확인을 위해 임시로 연결함
-        binding.floatingButton.setOnClickListener {
-            val intent = Intent(context, LikeActivity::class.java)
-            startActivity(intent)
-        }
 
         return binding.root
     }
